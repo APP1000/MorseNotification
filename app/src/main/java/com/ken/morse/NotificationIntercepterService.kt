@@ -62,7 +62,7 @@ class NotificationIntercepterService : NotificationListenerService() {
             return;
         }
         // Crop really long messages.
-        message = message.substring(0, Math.min(message.length,10))
+        // message = message.substring(0, Math.min(message.length,10))
         Log.d(TAG, "message: [$message]")
 
         // Delay the vibration to allow time for any system vibrations.
